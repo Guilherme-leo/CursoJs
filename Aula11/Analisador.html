@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Verificador</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: steelblue;
+           
+        }
+        input{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            text-decoration: underline;
+            font-size: 25pt;
+        }
+        h1{
+            font-size: 30pt;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Verificador de Gostosa</h1>
+    <p>Informe seu nome</p>
+    <input type="text" name="txt" id="nome">
+    <input type="button" value="ANALISAR" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var name_1= window.document.getElementById('nome').value
+            var res= window.document.querySelector('div#res')
+           
+            if(name_1=='mariana' || 
+            name_1=='mari' || 
+            name_1=='mariana clarice'||
+            name_1=='mamari'||
+            name_1=='miauri'||
+            name_1=='meu amor') {
+                res.innerHTML= `</p><h2>100% GOSTOSA!"</h2></p>`
+                res.innerHTML+= '<h2>PARADA AI, MULTADA POR SER MT GOSTOSA</h2></p>'
+                res.innerHTML+= '<h2>:)</h2></p>'
+                //window.document.body.style.background="red"
+                //window.document.body.style.background-image='img1.png'
+                //var fundo= document.getElementById
+            }
+            else{
+                res.innerHTML+= '<h2>Nem..., você no máximo é normalzinha</h2>'
+            }
+        }
+    </script>
+    
+</body>
+</html>
